@@ -74,7 +74,6 @@ class ViewController: UIViewController {
         if(sortSelected) {
             self.filteredDeals.sort{$0.score > $1.score}
         }
-        //        print("sortSelected: ",sortSelected, "minScore: ",minScore, "maxScore: ",maxScore, "filteredCount: ",self.filteredDeals.count)
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -113,7 +112,9 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DealCell", for: indexPath) as? DealTableViewCell
             else { return UITableViewCell() }
-        cell.configure(dealSummary: filteredDeals[indexPath.row])
+        if(filteredDeals.count > indexPath.row) {
+            cell.configure(dealSummary: filteredDeals[indexPath.row])
+        }
         return cell
     }
     
