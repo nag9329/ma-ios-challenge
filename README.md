@@ -29,11 +29,13 @@
 3. As a user I should be able to sort and filter the deal feed using various criteria 
 
     * Sort By Score
+        
         *Tasks*
         * Add a sort_filter icon to the deals page
         * Present a new ViewController when sort_filter icon clicked
         * Write sort logic to sort the deals from high to low score and display the deals accordingly.
-        *User Acceptance Criteria* 
+       
+       *User Acceptance Criteria* 
         * Given I’ve access to the application
         * When I click on the app icon
         * And I see the list of dynamic deals with a sort icon at the top right side of the view controller
@@ -43,11 +45,13 @@
         * Then I see the deals sorted from high to low score
 
     * Filter
+        
         *Tasks*
         * Add a sort_filter icon to the deals page
         * Present a new ViewController when sort_filter icon clicked
         * Write filter logic to filter the deals from based on user input in the min and max fields
-    *User Acceptance Criteria* 
+    
+        *User Acceptance Criteria* 
         * Given I’ve access to the application
         * When I click on the app icon
         * And I see the list of dynamic deals with a sort icon at the top right side of the view controller
@@ -57,9 +61,11 @@
         * Then I see the deals filtered based on the user entered min and max score 
         
 4. As a user I should be able to restart the app and maintain my last filter choice, including any values that may have been put into fields. 
+    
     *Tasks*
     * Add UserDefaults to save the min and max score
     * Add UserDefaults to save the sort selection
+    
     *User Acceptance Criteria* 
     * Given I’ve access to the application
     * When I click on the app icon
@@ -68,8 +74,10 @@
     * Then I see the last entered filtered values and sort selection
 
 5. As a user I should be able to rotate my phone into landscape mode and the app should automatically adjust to a landscape layout. 
+    
     *Tasks*
     * Add Autolayout constraints properly when adding each element to the storyboard
+    
     *User Acceptance Criteria* 
     * Given I’ve access to the application
     * When I click on the app icon
@@ -78,9 +86,11 @@
     * Then I see the list of deals without any issues
 
 6. As a user I should be able to see the total number of deals displayed in the deal feed and this number should automatically update when the filter changes. 
-    *Tasks*
+   
+   *Tasks*
     * Add a section header to the deals page that displays the total number of deals displayed in the page
-    *User Acceptance Criteria* 
+   
+   *User Acceptance Criteria* 
     * Given I’ve access to the application
     * When I click on the app icon
     * Then I see the list of dynamic deals with the count of deals displayed
@@ -89,8 +99,10 @@
     * Then I see the updated deals with updated deals count displayed
 
 7. As a user I expect that the data is coming from a remote endpoint and could change dynamically between requests.
+    
     *Tasks*
     * Make sure to handle the network response properly to accommodate any new property changes or value changes
+    
     *User Acceptance Criteria* 
     * Given I’ve access to the application
     * When I click on the app icon
